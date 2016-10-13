@@ -1,0 +1,56 @@
+html, body {
+	min-height: 100%; /* Allows the content of the to scale dynamically */
+}
+
+html {
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+}
+
+body {
+	background-image: url('background.jpg');
+	background-size: cover;
+	color: white;
+	/* background-repeat: no-repeat; */
+}
+
+.content {
+	text-align: center;
+	/* Center the wrapping container vertically */
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	display: flex;
+	/* Flexbox configurations*/
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.header {
+	font-size: 5.5vmin;
+	width: 500px;
+	padding: 20px
+}
+
+.countdown {
+	border: 2px solid white;
+	width: 500px;
+	/* overflow: hidden; */
+}
+
+.countdown h4 {
+	font-size: 1.7vmin;
+}
+
+.countdown h1 {
+	font-size: 5.5vmin;
+}
+
+.content div#days, .content div#hours, .content div#minutes, .content div#seconds {
+	float: left;
+	width: 25%;
+}
